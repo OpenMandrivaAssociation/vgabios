@@ -3,7 +3,7 @@ Version:	0.6c
 Release:	1
 Summary:	LGPL implementation of a vga video bios
 
-Group:		Applications/Emulators		
+Group:		Emulators		
 License:	LGPLv2
 URL:		http://www.nongnu.org/vgabios/
 Source0:	http://savannah.gnu.org/download/%{name}/%{name}-%{version}.tgz
