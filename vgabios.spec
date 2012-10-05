@@ -7,15 +7,15 @@ Group:		Emulators
 License:	LGPLv2
 URL:		http://www.nongnu.org/vgabios/
 Source0:	http://savannah.gnu.org/download/%{name}/%{name}-%{version}.tgz
-Patch01:		0001-Makefile-cleanup.patch
-Patch02:		0002-Add-defines-for-PCI-IDs.patch
-Patch03:		0003-Add-qemu-stdvga-pci-bios.patch
-Patch04:		0004-update-pci_get_lfb_addr-for-vmware-vga.patch 
-Patch05:		0005-Add-qemu-vmware-vga-pci-bios.patch 
-Patch06:		0006-Add-qemu-qxl-vga-pci-bios.patch 
+Patch01:	0001-Makefile-cleanup.patch
+Patch02:	0002-Add-defines-for-PCI-IDs.patch
+Patch03:	0003-Add-qemu-stdvga-pci-bios.patch
+Patch04:	0004-update-pci_get_lfb_addr-for-vmware-vga.patch 
+Patch05:	0005-Add-qemu-vmware-vga-pci-bios.patch 
+Patch06:	0006-Add-qemu-qxl-vga-pci-bios.patch 
 
 BuildRequires:	dev86
-BuildArch: noarch
+BuildArch:	noarch
 
 %description
 vgabios is an LPGL implementation of a bios for a video card.
@@ -34,13 +34,12 @@ emulators. It is not intended for use in real cards.
 %patch06 -p1
 
 %build 
-make clean
-make biossums %{?_smp_mflags}
-make %{?_smp_mflags}
+%make clean
+%make biossums
+%make
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/vgabios
 install -m 0644 VGABIOS-lgpl-*.bin $RPM_BUILD_ROOT%{_datadir}/vgabios 
 
