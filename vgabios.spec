@@ -1,6 +1,6 @@
 Name:		vgabios
 Version:	0.6c
-Release:	10
+Release:	11
 Summary:	LGPL implementation of a vga video bios
 
 Group:		Emulators		
