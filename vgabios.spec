@@ -5,7 +5,7 @@ Summary:	LGPL implementation of a vga video bios
 
 Group:		Emulators		
 License:	LGPLv2
-URL:		http://www.nongnu.org/vgabios/
+URL:		https://www.nongnu.org/vgabios/
 Source0:	http://savannah.gnu.org/download/%{name}/%{name}-%{version}.tgz
 Patch01:	0001-Makefile-cleanup.patch
 Patch02:	0002-Add-defines-for-PCI-IDs.patch
