@@ -14,6 +14,7 @@ Patch04:	0004-update-pci_get_lfb_addr-for-vmware-vga.patch
 Patch05:	0005-Add-qemu-vmware-vga-pci-bios.patch 
 Patch06:	0006-Add-qemu-qxl-vga-pci-bios.patch 
 
+BuildRequires:	make
 BuildRequires:	dev86
 BuildArch:	noarch
 
